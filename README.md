@@ -1,5 +1,34 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Structure
+
+src/
+├── app/
+│   ├── layout.tsx          (Main layout)
+│   ├── page.tsx            (Dashboard - list forms)
+│   ├── forms/
+│   │   ├── new/
+│   │   │   └── page.tsx    (Create new form)
+│   │   └── [id]/
+│   │       ├── page.tsx    (Edit form)
+│   │       └── responses/
+│   │           └── page.tsx (View responses)
+│   └── preview/
+│       └── [id]/
+│           └── page.tsx    (Public form - for respondents)
+│
+├── components/
+│   ├── FormBuilder.tsx     (Create/edit form)
+│   ├── FormPreview.tsx     (Show form preview)
+│   ├── QuestionEditor.tsx  (Edit one question)
+│   └── FormList.tsx        (List of forms)
+│
+├── types/
+│   └── index.ts            (All TypeScript interfaces)
+│
+└── lib/
+    └── storage.ts          (localStorage functions for now)
+
 ## Getting Started
 
 First, run the development server:
