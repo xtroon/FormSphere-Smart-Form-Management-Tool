@@ -1,1 +1,0 @@
-// localStorage functions for NexForm
